@@ -165,7 +165,6 @@ function westcozy_cabins_scripts()
 	// Enqueue Google Maps on Homepage and Contact page
 	$id = get_the_ID();
 	if ($id == 22 || $id == 30) {
-		wp_enqueue_script('google-map-ACF', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAqK_12Oy69LPP4jZnb9gzGzr6pNIpI1sw');
 		wp_enqueue_script('google-map-ACF-init', get_template_directory_uri() . '/js/google-map-ACF.js', array('jquery', 'google-map-ACF'), _S_VERSION, true);
 	}
 
